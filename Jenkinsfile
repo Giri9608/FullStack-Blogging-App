@@ -66,7 +66,7 @@ pipeline {
         }
         stage('Docker Image Scan') {
             steps {
-                sh 'trivy image --format table -o image-report.html giri/bankapp:$IMAGE_TAG'
+                sh 'trivy image --format table -o image-report.html giri8608/bankapp:$IMAGE_TAG'
             }
         }
         stage('Push Docker Image') {
